@@ -1,2 +1,11 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Ignore big trained model files & data files
+*.h5 linguist-vendored
+*.pt linguist-vendored
+*.pb linguist-vendored
+*.onnx linguist-vendored
+
+# Ignore heavy notebooks that inflate size
+*.ipynb linguist-vendored
+
+# Keep your actual Python scripts counted
+*.py linguist-language=Python
